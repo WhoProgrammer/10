@@ -1,0 +1,358 @@
+
+           /* 
+            */
+       @import url("https://fonts.googleapis.com/css?family=Raleway");
+          *{
+              margin: 0;
+              box-sizing: border-box;
+              font-family: "Raleway", sans-serif;
+          }
+          html, body{
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+          }
+          .logo{
+              font-size: 30px;
+              font-weight: bolder;
+              text-transform: uppercase;
+          }
+          .bg-black{
+              background-color: black;
+              color: white;
+          }
+          p{
+              font-size: 15px;
+          }
+          a{
+              text-decoration: none;
+          }
+          nav{
+              background: black;
+          }
+          nav a{color: white !important; text-wrap: nowrap;}
+          ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+    /* .button
+     */
+     .button {
+        position: relative;
+        padding: 10px 22px;
+        border-radius: 6px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+        transition: all 0.2s ease;
+      }
+      
+      .button:active {
+        transform: scale(0.96);
+      }
+      
+      .button:before,
+      .button:after {
+        position: absolute;
+        content: "";
+        width: 150%;
+        left: 50%;
+        height: 100%;
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
+        pointer-events: none;
+      }
+      
+      .button:hover:before {
+        top: -70%;
+        background-image: radial-gradient(circle, #a89215 20%, transparent 20%),
+          radial-gradient(circle, transparent 20%, #13a5be 20%, transparent 30%),
+          radial-gradient(circle, #a3b82d 20%, transparent 20%),
+          radial-gradient(circle, #590cbe 20%, transparent 20%),
+          radial-gradient(circle, transparent 10%, #bd1717 15%, transparent 20%),
+          radial-gradient(circle, #2a7ce8 20%, transparent 20%),
+          radial-gradient(circle, #30e82a 20%, transparent 20%),
+          radial-gradient(circle, #e92c75 20%, transparent 20%),
+          radial-gradient(circle, #914fe7 20%, transparent 20%);
+        background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+          10% 10%, 18% 18%;
+        background-position: 50% 120%;
+        animation: greentopBubbles 0.6s ease;
+      }
+      
+      @keyframes greentopBubbles {
+        0% {
+          background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+            40% 90%, 55% 90%, 70% 90%;
+        }
+      
+        50% {
+          background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+            50% 50%, 65% 20%, 90% 30%;
+        }
+      
+        100% {
+          background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+            50% 40%, 65% 10%, 90% 20%;
+          background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        }
+      }
+      
+      .button:hover::after {
+        bottom: -70%;
+        background-image: radial-gradient(circle, #ff93db 20%, transparent 20%),
+          radial-gradient(circle, #2ae8df 20%, transparent 20%),
+          radial-gradient(circle, transparent 10%, #71ffbd 15%, transparent 20%),
+          radial-gradient(circle, #2a9ce8 20%, transparent 20%),
+          radial-gradient(circle, #7814fc 20%, transparent 20%),
+          radial-gradient(circle, #73e4f8 20%, transparent 20%),
+          radial-gradient(circle, #f8d3a9 20%, transparent 20%);
+        background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+        background-position: 50% 0%;
+        animation: greenbottomBubbles 0.6s ease;
+      }
+      
+      @keyframes greenbottomBubbles {
+        0% {
+          background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+            70% -10%, 70% 0%;
+        }
+      
+        50% {
+          background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+            105% 0%;
+        }
+      
+        100% {
+          background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+            110% 10%;
+          background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        }
+      }
+      
+          /* short */
+          .short {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 5px 10px;
+        display: block;
+        /* background-color: rgba(145, 145, 145, 0.185); */
+        background-blend-mode: difference;
+        border: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1;
+        cursor: pointer;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+      
+      .short span {
+        background: linear-gradient(-45deg, #000000 0%, #b7b7b7 100% );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .short::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(2);
+        border: 3px solid;
+        border-image: linear-gradient(-45deg, #acacac 0%, #000000 100% );
+        border-image-slice: 1;
+        border-width: 2px 0 2px 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+        z-index: -1;
+      }
+      
+      .short:hover::before {
+        transform: scaleY(0);
+        opacity: 1;
+      }
+      
+      .short::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(-45deg, #a1a1a1 0%, #000000 100% );
+        transform: scale(0);
+        pointer-events: none;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+        z-index: -1;
+      }
+      
+      .short:hover::after {
+        transform: scaleY(1);
+      }
+      
+      .short:active {
+        scale: 0.90;
+      }
+      
+      /*  */
+      .short {
+        --c: #fff;
+        transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+        text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+          calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+        outline-offset: .1em;
+        transition: 0.3s;
+      }
+      
+      .short:hover,
+      .short:focus-visible {
+        --_p: 0%;
+        --_i: 1;
+      }
+      
+      .short:active {
+        text-shadow: none;
+        color: var(--c);
+        box-shadow: inset 0 0 9e9q #0005;
+        transition: 0s;
+      }
+      
+      
+
+          
+          /* section1 */
+          .section1{
+              padding: 0 10%;
+          }
+          .section1 h1{
+              font-size: 50px;
+              font-weight: bolder;
+              font-family: sans-serif;
+              max-width: 390px;
+          }
+          @media (max-width: 550px) {
+              .section1 .contain{zoom: .7;}
+          }
+          /* section2 */
+          .top h1{
+              font-weight: bolder;
+          }
+          .section2 .card-box{
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              gap: 20px;
+          }
+          .section2 .card{
+              width: 18rem;
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              border: none !important;
+              box-shadow: 0 0 20px rgb(201, 201, 201);
+          }
+          .section2 .card img{
+              width: 50px;
+              margin: 25px 0;
+          }
+          .section2 .card h5{
+              font-weight: bolder;
+          }
+          .section2 .card:nth-child(2){
+              box-shadow: 0 0 30px rgb(162, 162, 162);
+              padding: 30px 20px;
+          }
+          /* .section3 */
+          @media (max-width: 550px) {
+              .section3 .section1{
+               flex-direction: column-reverse;
+              }
+          }
+          
+          /* section4 */
+          .section4 img{
+              width: 35px;
+              margin-right: 20px;
+          }
+          .section4 .row{
+              justify-content: center;
+              gap: 20px;
+          }
+          .section4 .col-md-5{
+              padding: 20px;
+              background-color: white;
+              border-radius: 20px;
+          }
+          /* .section5 */
+          .section5 h1{
+              font-weight: bolder;
+          }
+          .section5 .card-box{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 1vw;
+          }
+          .section5 .card{
+              width: 18rem;
+              background-color: rgba(192, 192, 192, 0.13);
+              position: relative;
+              overflow: hidden;
+              transition: .3s;
+          }
+          .section5 .card:hover{
+              box-shadow: 0 0 20px silver;
+          }
+          .section5 .card::before{
+              content: "";
+              position: absolute;
+              width: 200%;
+              height: 30%;
+              background: linear-gradient(transparent, rgba(192, 192, 192, 0.301), transparent);
+              rotate: 45deg;
+              left: -60%;
+              top: -30%;
+              transition: .7s;
+              pointer-events: none;
+          }
+          .section5 .card:hover::before{
+              top: 100%;
+          }
+          .section5 .card-top{
+              padding: 50px 0;
+          }
+          .section5 .card-bottom{
+              padding: 20px 0;
+              display: flex;
+              flex-direction: column;
+          }
+          .section5 button{
+              width: 80%;
+          }
+          .section5 .contain{
+              padding: 50px 0;
+          }
+          /* section6 */
+          /* footer */
+          footer{
+              text-align: center;
+              background: black;
+              color: white;
+              padding: 20px 0;
+          }
+      
+      
+      
